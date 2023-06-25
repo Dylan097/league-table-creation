@@ -2,17 +2,20 @@
     justify-content: flex-start!important;
 }
 
-.NavLink {
-    color: #FFFFFF;
-    padding: 5px;
+.NavBarCollapseIcon {
+    background-color: #f5f5df;
+    
 }
 
-.Brand {
-    color: #FFFFFF!important
+.NavLink {
+    width: fit-content;
+    margin-left: 0.25rem;
 }
 
 .NavLink,
 .Brand {
+    color: #FFFFFF!important;
+    padding: 0 0.5rem;
     transition: 0.5s;
 }
 

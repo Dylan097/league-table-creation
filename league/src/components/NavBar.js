@@ -8,17 +8,20 @@ import logo from '../assets/logo.png'
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
-        <Container className={styles.NavBar}>
-          <img src={logo} />
-          <Navbar.Brand href="#" className={styles.Brand}>Mafia Mystery Leagues</Navbar.Brand>
+    <Navbar expand="md" bg="dark" data-bs-theme="dark">
+      <Container className={styles.NavBar}>
+        <img src={logo} />
+        <Navbar.Brand href="#" className={styles.Brand}>Mafia Mystery Leagues</Navbar.Brand>
+        <Navbar.Toggle aria-controls='expand-on-md' className={`ml-auto ${styles.NavBarCollapseIcon}`} />
+        <Navbar.Collapse id='expand-on-md'>
           <Nav className="ml-auto">
             <NavLink className={styles.NavLink} to="#">Home</NavLink>
             <NavLink className={styles.NavLink} to="#">Leagues</NavLink>
             <NavLink className={styles.NavLink} to="#">My Leagues</NavLink>
           </Nav>
-        </Container>
-      </Navbar>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 

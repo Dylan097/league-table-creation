@@ -1,0 +1,31 @@
+.NavBar {
+    justify-content: flex-start!important;
+}
+
+.NavLink {
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.Brand {
+    color: #FFFFFF!important
+}
+
+.NavLink,
+.Brand {
+    transition: 0.5s;
+}
+
+.NavLink:hover,
+.Brand:hover {
+    color: #343a40!important;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+img {
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 5px;
+}

@@ -7,7 +7,8 @@
     
 }
 
-.NavLink {
+.NavLink,
+.Active {
     width: fit-content;
     margin-left: 0.25rem;
 }
@@ -15,12 +16,19 @@
 .NavLink,
 .Brand {
     color: #FFFFFF!important;
+}
+
+.NavLink,
+.Brand,
+.Active {
     padding: 0 0.5rem;
     transition: 0.5s;
 }
 
 .NavLink:hover,
-.Brand:hover {
+.Brand:hover,
+.Active,
+.Active:hover {
     color: #343a40!important;
     text-decoration: none;
     background-color: #FFFFFF;

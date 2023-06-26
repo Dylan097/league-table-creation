@@ -1,5 +1,26 @@
 .App {
     min-height: 100vh;
     background-color: #f5f5df;
+}
+
+.Nav {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Form {
+    background-color: #272323;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: inset 0.5rem #272323;
+    display: flex;
+    justify-content: center;
+}
+
+.Form > form > div {
+    margin-bottom: 5px;
+}
+
+.App > div > h1 {
+    text-align: center;
 }

@@ -8,16 +8,23 @@ import logo from '../assets/logo.png'
 
 const NavBar = () => {
   return (
-    <Navbar expand="md" bg="dark" data-bs-theme="dark">
+    <Navbar expand="md" bg="dark" data-bs-theme="dark" sticky='top'>
       <Container className={styles.NavBar}>
-        <img src={logo} />
-        <Navbar.Brand href="#" className={styles.Brand}>Mafia Mystery Leagues</Navbar.Brand>
+        <img src={logo} alt='logo' />
+        <NavLink to="/">
+          <Navbar.Brand className={styles.Brand}>Mafia Mystery Leagues</Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls='expand-on-md' className={`ml-auto ${styles.NavBarCollapseIcon}`} />
         <Navbar.Collapse id='expand-on-md'>
           <Nav className="ml-auto">
-            <NavLink className={styles.NavLink} to="#">Home</NavLink>
-            <NavLink className={styles.NavLink} to="#">Leagues</NavLink>
-            <NavLink className={styles.NavLink} to="#">My Leagues</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? styles.Active : styles.NavLink} to="/" end>Home</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? styles.Active : styles.NavLink} to="/leagues" end>Leagues</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? styles.Active : styles.NavLink} to="/my_leagues">My Leagues</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? styles.Active : styles.NavLink} to="/leagues/create">Create League</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
